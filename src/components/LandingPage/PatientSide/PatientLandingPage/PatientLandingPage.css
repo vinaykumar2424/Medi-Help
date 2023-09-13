@@ -1,0 +1,182 @@
+.PatientLandingPage {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.PatientLandingPage::before {
+    content: "MEDI - HELP ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 10vw;
+    transform: rotate(-45deg);
+    color: #e91e621f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.PatientLandingPage .heading1 {
+    font-size: 4vw;
+    margin-top: 15vh;
+}
+
+.PatientLandingPage .DoctorLists {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    padding: 20px 0;
+}
+.DoctorLists a{
+    color: black;
+    text-decoration: none;
+}
+.DoctorLists .TypeOfDoctor {
+    background-color: rgba(255, 217, 0, 0.537);
+    padding: 10px 15px;
+    margin: 10px;
+    letter-spacing: 0.5px;
+
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.DoctorLists .TypeOfDoctor:hover {
+    transform: scale(1.05);
+    background-color: rgb(255, 217, 0);
+}
+.listOfDoctors {
+    display: none;
+    position: absolute;
+    width: 80vw;
+    height: 80vh;
+    margin-left: 10vw;
+    margin-top: 10vh;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+    backdrop-filter: blur(5px) saturate(0%);
+    -webkit-backdrop-filter: blur(5px) saturate(0%);
+    background-color: rgba(185, 194, 0, 0.5);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    animation: comeUpWindow 1s ease-in-out;
+}
+.listOfDoctorsDisplayShow{
+    display: block;
+}
+.loader{
+    height: auto;
+    width: 50px;
+}
+@keyframes comeUpWindow {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+
+    100% {
+        width: 80vw;
+        height: 80vh;
+        opacity: 1;
+    }
+}
+
+.closeBtn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.closeBtn:hover {
+    color: rgb(227, 0, 0);
+    transform: rotate(90deg) scale(1.2);
+    font-weight: bold;
+}
+
+.doctorsHeading {
+    font-size: 4vw;
+    margin: 5vh 2.5%;
+    width: 95%;
+    background: linear-gradient(90deg, rgba(128, 128, 128, 0), gray, rgb(75, 75, 75), gray, rgba(128, 128, 128, 0));
+    color: #f1f1f1;
+}
+
+.AllDoctor {
+    width: 95%;
+    margin: 0 2.5%;
+    height: 70%;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.AllDoctor a{
+    color: #141414;
+    text-decoration: none;
+}
+.DoctorOption{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(90% - 30px);
+    margin-left: 5%;
+    margin-top: 2vh;
+    border: 1px solid rgba(0, 0, 0, 0.26);
+    border-radius: 10px;
+    padding: 0 15px;
+    cursor: pointer;
+    box-shadow: 0 0  5px black;
+    transition: 0.5s;
+}
+.DoctorOption:hover {
+    transform: scale(1.05);
+    background-color: rgba(179, 179, 0, 0.484);
+}
+.DoctorOption img {
+    width: 5vw;
+    height: 5vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    border: 2px solid white;
+    filter: drop-shadow(0 0  5px black);
+    object-fit: cover;
+}
+.DoctorOptionName{
+    font-size: 3vw;
+}
+.DoctorOptionOtherDetails{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}

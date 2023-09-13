@@ -1,0 +1,368 @@
+.Contact {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.TopPartContact{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+
+.Contact nav {
+    width: 15vw;
+    background-color: #d8f80d;
+    height: 100%;
+}
+
+.Contact .ContactContent {
+    width: 85vw;
+    height: 100%;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+.Contact nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20vh;
+    height: 100%;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.Contact nav ul li {
+    font-size: 4.5vw;
+    list-style: none;
+    cursor: pointer;
+    transform: rotate(-70deg);
+    transition: 0.5s;
+}
+
+.Contact nav ul a {
+    list-style: none;
+    text-decoration: none;
+    color: Black;
+}
+
+.Contact nav ul li:hover {
+    transform: rotate(0deg);
+    background: linear-gradient(90deg, rgb(0, 0, 0), #565656);
+    /* color: rgb(155, 155, 155); */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contactheading1 {
+    font-size: 8vw;
+    margin-top: 10vh;
+}
+
+.contactheading2 {
+    text-decoration: underline;
+}
+
+.contactheading3 {
+    font-size: 3vw;
+    margin-top: 8vh;
+}
+
+.contactheading4 {
+    font-size: 3vw;
+    margin-top: 10vh;
+    position: relative;
+}
+
+.contactheading4::after {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.247);
+    bottom: 20px;
+    left: 5%;
+    z-index: -1;
+}
+
+.contactheading4::before {
+    content: "You can reach us out";
+    position: absolute;
+    width: 35%;
+    height: 50px;
+    background-color: #e0e199;
+    top: 5px;
+}
+.socialMediaHeading{
+    margin-top: 5vh;
+    font-size: 2vw;
+    text-decoration: underline;
+}
+
+.socialMediaHandlesIcons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5vh;
+}
+.socialMediahandle{
+    text-decoration: none;
+    color: #000000;
+}
+.socialMediahandle div {
+    letter-spacing: 1px;
+}
+
+.socialMediahandle img {
+    width: 10vw;
+    height: auto;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.socialMediahandle1:hover {
+    background: #0077b7;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 50%;
+
+}
+
+.socialMediahandle2:hover {
+    background: #5865f2;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 50%;
+}
+
+.socialMediahandle3:hover {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 50%;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh 0;
+    position: relative;
+}
+.form:after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.247);
+    top: 30px;
+    left: 10%;
+    z-index: -1;
+}
+
+.form p {
+    text-align: center;
+    font-size: 2vw;
+    color: rgb(0, 0, 0);
+}
+
+.form button {
+    width: 60%;
+    border-radius: 5px;
+    height: 7vh;
+    border: none;
+    transition: 0.5s;
+    margin-top: 2.5vh;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.form button:hover {
+    background-color: #d8f80d;
+    color: #000000;
+    transition: 0.5s;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.input-box {
+    position: relative;
+    width: 60%;
+    margin: 10px 0;
+}
+
+.input-box input {
+    /* width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 #d9f80da5;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 5px;
+    outline: none;
+    color: #000000;
+    font-size: 1em; */
+    
+    width: calc(100% - 20px);
+    padding: 10px;
+    -webkit-backdrop-filter: blur(4px);
+    outline: none;
+    color: #000000;
+    font-size: 1em;
+    border-top: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background: #e0e199;
+    border-left: none;
+    border-right: none;
+}
+
+.input-box textarea {
+
+    width: calc(100% - 20px);
+    padding: 10px;
+    -webkit-backdrop-filter: blur(4px);
+    outline: none;
+    color: #000000;
+    font-size: 1em;
+    border-top: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background: #e0e199;
+    border-left: none;
+    border-right: none;
+
+    min-width: calc(100% - 20px);
+    max-width: calc(100% - 20px);
+    min-height: 5vw;
+    max-height: 10vw;
+}
+
+.input-box span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.279);
+    text-transform: uppercase;
+}
+
+.input-box input:valid~span,
+.input-box input:focus~span,
+.input-box textarea:valid~span,
+.input-box textarea:focus~span {
+    color: rgba(0, 0, 0, 0.279);
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.75em;
+    padding: 0 10px;
+    background: #e0e199;
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+    letter-spacing: 2px;
+
+}
+
+.input-box input:valid,
+.input-box input:focus,
+.input-box textarea:valid,
+.input-box textarea:focus {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+}
+.contactheading5{
+    font-size: 5vw;
+    margin: 10vh 0;
+    text-decoration: underline;
+}
+@media screen and (max-width: 420px) {
+    .Contact {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+    }
+    .Contact nav {
+        width: 100%;
+        background-color: #d8f80d;
+        height: 15vh;
+    }
+    .Contact nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 0;
+        height: 100%;
+        width: 100%;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .Contact .ContactContent {
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+        scroll-behavior: smooth;
+    }
+    .TopPartContact {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5vh;
+    }
+    .contactheading4::before {
+        content: "You can reach us out";
+        position: absolute;
+        width: 45%;
+        height: auto;
+        background-color: #e0e199;
+        top: 0;
+        font-size: 2vh;
+        margin-left: -30px;
+    }
+    .form p {
+        text-align: center;
+        font-size: 2vh;
+        color: rgb(0, 0, 0);
+    }
+    .socialMediaHeading {
+        margin-top: 5vh;
+        font-size: 1.5vh;
+        text-decoration: underline;
+    }
+    .input-box {
+        position: relative;
+        width: 80%;
+        margin: 10px 0;
+    }
+    .form button {
+        width: 80%;
+        border-radius: 5px;
+        height: 7vh;
+        border: none;
+        transition: 0.5s;
+        margin-top: 2.5vh;
+        background-color: #000000;
+        color: #ffffff;
+    }
+}

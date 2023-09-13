@@ -1,0 +1,472 @@
+
+* {
+    font-family: 'Anton', sans-serif;
+    font-weight: 200;
+
+}
+.Homebtn{
+    z-index: 1;
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 15px;
+    right: 2vw;
+    animation: fullWidth 1s ease-in-out;
+}
+.Homebtn span{
+    cursor: pointer;
+}
+.Homebtn span:hover{
+    transform: scale(1.3);
+    color: #d8f80d;
+    transition: 0.5s;
+}
+
+.RegisterAsDoctor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    margin-left: -4vw;
+    overflow: hidden;
+    animation: fullOpacity 1s ease-in-out;
+    filter: drop-shadow(6px 6px 3px #2828284c);
+}
+
+@keyframes fullOpacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fullWidth {
+    0% {
+        transform: translate(0, -15px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.ImgAndSomeText {
+    position: relative;
+    width: auto;
+    height: 70vh;
+    border: 10px solid #d8f80d;
+}
+
+.ImgAndSomeText::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.DemoDoctorImg {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    animation: fullOpacity 1s ease-in-out, fullWidth 1s ease-in-out;
+}
+
+.DemoDoctoText {
+    display: inline-block;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 100%;
+    color: #ffffff;
+    letter-spacing: 2px;
+    z-index: 2;
+}
+
+.DemoDoctoText p:nth-child(1) {
+    filter: drop-shadow(2px 1px 2px #000000);
+    font-size: 5vh;
+    animation: fullWidth 1s ease-in-out;
+    filter: drop-shadow(0px 0px 6px #1e1e1e);
+    background: linear-gradient(90deg, rgb(145, 145, 145), #d8f80d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 1s;
+}
+
+.DemoDoctoText p:nth-child(2) {
+    font-size: 3vh;
+    filter: drop-shadow(2px 1px 2px #000000);
+    animation: fullWidth 1s ease-in-out;
+    background: linear-gradient(90deg, rgb(145, 145, 145), #d8f80d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 1s;
+}
+
+.DemoDoctoText p:nth-child(3) {
+    font-size: 3vh;
+    filter: drop-shadow(2px 1px 2px #000000);
+    animation: fullWidth 1s ease-in-out;
+    background: linear-gradient(90deg, rgb(145, 145, 145), #d8f80d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 1s;
+}
+.DemoDoctoText p:nth-child(1):hover,.DemoDoctoText p:nth-child(2):hover,.DemoDoctoText p:nth-child(3):hover{
+    letter-spacing: 3px;
+}
+
+.RegisterAsDoctor form {
+    width: 30vw;
+    height: 60vh;
+    position: relative;
+    background-color: #d8f80d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vh 0;
+    border: 10px solid #d8f80d;
+
+}
+
+.RegisterForm p {
+    font-size: 3vw;
+}
+
+.RegisterAsDoctor form::before {
+    content: "";
+    position: absolute;
+    top: -6vh;
+    left: -11vw;
+    width: 30vw;
+    height: 85vh;
+    background-color: #d8f80d;
+    transform: rotate(22deg);
+    transform-origin: left;
+}
+
+.RegisterAsDoctor form::after {
+    content: "";
+    position: absolute;
+    top: -5vh;
+    width: 40vw;
+    left: 15vw;
+    height: 80vh;
+    background-image: linear-gradient(225deg,
+            hsl(240deg 6% 3%) 0%,
+            hsl(68deg 80% 18%) 21%,
+            hsl(68deg 85% 25%) 30%,
+            hsl(68deg 87% 30%) 39%,
+            hsl(68deg 89% 34%) 46%,
+            hsl(68deg 90% 38%) 54%,
+            hsl(68deg 90% 42%) 61%,
+            hsl(68deg 91% 45%) 69%,
+            hsl(68deg 91% 48%) 79%,
+            hsl(68deg 94% 51%) 100%);
+}
+
+form p {
+    animation: fullWidth 1s ease-in-out;
+    text-align: center;
+    font-size: 2vw;
+    color: rgb(0, 0, 0);
+    z-index: 1;
+    letter-spacing: 2px;
+    filter: drop-shadow(2px 1px 2px #ffffff);
+}
+
+form button {
+    width: 25vw;
+    border-radius: 5px;
+    height: 7vh;
+    border: none;
+    transition: 0.5s;
+    margin-top: 2.5vh;
+    z-index: 1;
+    background-color: #e8f0fe;
+    letter-spacing: 2px;
+    animation: fullWidth 1s ease-in-out;
+}
+.loader{
+    height: auto;
+    width: 50px;
+}
+form button a{
+    text-decoration: none;
+    color: #000000;
+}
+form button:hover {
+    background-color: #8ea400;
+    color: #e8f0fe;
+    transition: 0.5s;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    transform: scale(1.05);
+    letter-spacing: 3px;
+}
+
+.inputBox {
+    position: relative;
+    width: 25vw;
+    margin: 10px 0;
+    z-index: 1;
+    animation: fullWidth 1s ease-in-out;
+}
+
+.routeTo {
+    z-index: 1;
+    width: 100%;
+    margin-top: 15px;
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5vw;
+    letter-spacing: 1px;
+    animation: fullWidth 1s ease-in-out;
+}
+
+.routeTo span {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.routeTo span:hover {
+    color: #70800a;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.inputBox input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 #d8f80d;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 5px;
+    outline: none;
+    color: #000000;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+
+.inputBox span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.30);
+    text-transform: uppercase;
+}
+
+.inputBox input:valid~span,
+.inputBox input:focus~span {
+    color: rgb(0, 0, 0);
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.75em;
+    padding: 0 10px;
+    background: rgb(216 248 13);
+    border-left: 1px solid #99b100;
+    border-right: 1px solid #99b100;
+    transition: 0.5s;
+    letter-spacing: 2px;
+
+}
+
+.inputBox input:valid,
+.inputBox input:focus {
+    border: 1px solid #99b100;
+    transition: 0.5s;
+}
+
+.RouteToPatientForm {
+    z-index: 1;
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    letter-spacing: 1px;
+    position: absolute;
+    bottom: 15px;
+    left: -10vw;
+    animation: fullWidth 1s ease-in-out;
+}
+
+.RouteToPatientForm span {
+    cursor: pointer;
+}
+
+.RouteToPatientForm span:hover {
+    transform: scale(1.3);
+    color: #70800a;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 420px) {
+    .RegisterAsDoctor {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+        margin-left: 0;
+        overflow: auto;
+        overflow-x: hidden;
+        height: auto;
+        animation: AllLogin_fullOpacity__VR7Ea 1s ease-in-out;
+        filter: drop-shadow(6px 6px 3px #2828284c);
+    }
+    .Homebtn{
+        z-index: 1;
+        font-size: 12px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px;
+        letter-spacing: 1px;
+        position: absolute;
+        top: 15px;
+        right: 5vw;
+        animation: fullWidth 1s ease-in-out;
+        color: rgb(238, 238, 238);
+        z-index: 5;
+    }
+    .Homebtn a{
+        color: rgb(239, 239, 239);
+    }
+    .DemoDoctoText {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        color: #ffffff;
+        letter-spacing: 2px;
+        z-index: 2;
+    }
+    .DemoDoctorImg {
+        width: 90%;
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+        position: relative;
+        animation: fullOpacity 1s ease-in-out, fullWidth 1s ease-in-out;
+    }  
+    .RegisterAsDoctor form {
+        width: 90vw;
+        height: auto;
+        position: relative;
+        background-color: #d8f80d;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5vh 0;
+        border: 10px solid #d8f80d;  
+    }
+    .inputBox {
+        position: relative;
+        width: 75vw;
+        margin: 10px 0;
+        z-index: 1;
+        animation: fullWidth 1s ease-in-out;
+    }
+    .RegisterAsDoctor form::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 45vw;
+        left: 45vw;
+        height: 50vh;
+        background-image: linear-gradient(225deg,
+                hsl(240deg 6% 3%) 0%,
+                hsl(68deg 80% 18%) 21%,
+                hsl(68deg 85% 25%) 30%,
+                hsl(68deg 87% 30%) 39%,
+                hsl(68deg 89% 34%) 46%,
+                hsl(68deg 90% 38%) 54%,
+                hsl(68deg 90% 42%) 61%,
+                hsl(68deg 91% 45%) 69%,
+                hsl(68deg 91% 48%) 79%,
+                hsl(68deg 94% 51%) 100%);
+    }
+    form p {
+        animation: fullWidth 1s ease-in-out;
+        text-align: center;
+        font-size: 2vh;
+        color: rgb(0, 0, 0);
+        z-index: 1;
+        letter-spacing: 2px;
+        filter: drop-shadow(2px 1px 2px #ffffff);
+    }
+    form button {
+        width: 75vw;
+        border-radius: 5px;
+        height: 7vh;
+        border: none;
+        transition: 0.5s;
+        margin-top: 2.5vh;
+        z-index: 1;
+        background-color: #e8f0fe;
+        letter-spacing: 2px;
+        animation: AllLogin_fullWidth__Z2Thj 1s ease-in-out;
+    }
+    .ImgAndSomeText {
+        position: relative;
+        width: auto;
+        height: auto;
+        border: 10px solid #d8f80d;
+    }
+    .RouteToPatientForm {
+        z-index: 1;
+        font-size: 12px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px;
+        letter-spacing: 1px;
+        position: absolute;
+        bottom: 0;
+        left: 5vw;
+        animation: fullWidth 1s ease-in-out;
+    }
+    .routeTo {
+        z-index: 1;
+        width: 90%;
+        margin-top: 15px;
+        font-size: 12px;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 5vw;
+        letter-spacing: 1px;
+        animation: fullWidth 1s ease-in-out;
+    }
+    .RegisterAsDoctor form::before {
+        content: none;
+        position: absolute;
+        top: -6vh;
+        left: -11vw;
+        width: 30vw;
+        height: 85vh;
+        background-color: #d8f80d;
+        transform: rotate(22deg);
+        transform-origin: left;
+    }
+}

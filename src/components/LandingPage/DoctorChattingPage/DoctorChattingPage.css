@@ -1,0 +1,161 @@
+.DoctorChattingPage {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.DoctorChattingPage::before {
+    content: "MEDI - HELP";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 10vw;
+    transform: rotate(-45deg);
+    color: #e91e621f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.chattingWindow {
+    width: 96%;
+    height: 80%;
+    padding: 5% 2% 1% 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.chatMessages:nth-child(odd) {
+    margin-left: auto;
+}
+
+.chatMessages:nth-child(even) {
+    margin-left: auto;
+}
+
+.chatMessages {
+    width: auto;
+    max-width: 40%;
+    text-align: left;
+    padding: 10px 15px;
+    border-radius: 12px;
+    margin: 10px 0;
+
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+}
+.chatmsgTime{
+    font-size: 10px;
+    float: right;
+}
+.chatMessagesElse {
+    width: auto;
+    max-width: 40%;
+    text-align: left;
+    padding: 10px 15px;
+    border-radius: 12px;
+    margin: 10px 0;
+
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+}
+
+.btnToBottom {
+    position: absolute;
+    bottom: 12vh;
+    right: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.roleHeading {
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-end;
+}
+.roleHeadingElse{
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-start;
+}
+.imageMessage{
+    max-width: 20vw;
+    height: auto;
+    object-fit: cover;
+}
+.loderImg{
+    max-width: 50px;
+    height: auto;
+    object-fit: cover;
+}
+.MessageTypingBox {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0 0 10px black);
+}
+
+.MessageTypingBox input {
+    border: none;
+    outline: none;
+    padding: 10px 10px 10px 5%;
+    border-radius: 5px;
+    width: 70%;
+    letter-spacing: 0.5px;
+}
+
+.MessageTypingBox span {
+    position: absolute;
+    right: 13%;
+    cursor: pointer;
+    color: rgb(0, 69, 0);
+    transition: 0.2s;
+}
+
+.MessageTypingBox label {
+    position: absolute;
+    left: 13%;
+}
+
+.MessageTypingBox label span {
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+    color: rgb(0, 69, 0);
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.MessageTypingBox span:hover {
+    color: rgb(0, 130, 0);
+    transform: scale(1.02) rotate(-30deg);
+}
+
+.MessageTypingBox label span:hover {
+    color: rgb(0, 130, 0);
+    transform: scale(1.02) rotate(0);
+}
